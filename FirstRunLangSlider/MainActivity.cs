@@ -4,14 +4,12 @@ using Android.OS;
 
 namespace FirstRunLangSlider
 {
-    [Activity(Label = "FirstRunLangSlider", MainLauncher = true)]
-    public class MainActivity : Activity
+    [Activity(Label = "FirstRunLangSlider")]
+    public class MainActivity : BaseActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            base.OnCreate(savedInstanceState);
-
-            // Set our view from the "main" layout resource
+             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Main);
         }
     }
